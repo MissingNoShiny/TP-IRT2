@@ -36,9 +36,7 @@ public class CompteBancaireFrm extends JFrame {
         super(title);
         setPreferredSize(new Dimension(450, 100));
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new FlowLayout());
-        mainPanel.setPreferredSize(getSize());
+        JPanel mainPanel = new JPanel(new FlowLayout());
 
         JLabel montant = new JLabel("Montant : ");
         mainPanel.add(montant);

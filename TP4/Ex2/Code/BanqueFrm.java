@@ -66,6 +66,7 @@ public class BanqueFrm extends JFrame {
                 interetsButton.setVisible(compteComboBox.getSelectedItem() instanceof CompteEpargne);
             }
         };
+        interetsButtonObserver.update();
         compteComboBox.addActionListener(actionEvent -> interetsButtonObserver.update());
 
         Observeur validerObserver = new Observeur() {
