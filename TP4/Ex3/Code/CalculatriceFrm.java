@@ -54,7 +54,7 @@ public class CalculatriceFrm extends JFrame {
         }
         mainPanel.add(buttonPanel);
 
-        add(mainPanel);
+        setContentPane(mainPanel);
         setTitle("Calculatrice");
         pack();
         setVisible(true);

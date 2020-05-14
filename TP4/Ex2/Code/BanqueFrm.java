@@ -101,7 +101,7 @@ public class BanqueFrm extends JFrame {
         };
         interetsButton.addActionListener(actionEvent -> calculerInteretsObserveur.update());
 
-        add(mainPanel);
+        setContentPane(mainPanel);
         setTitle("Self banking");
         pack();
         setVisible(true);

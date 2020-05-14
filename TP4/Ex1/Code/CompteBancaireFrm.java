@@ -61,7 +61,7 @@ public class CompteBancaireFrm extends JFrame {
         mainPanel.add(scroll);
 
         ecouteur.update();
-        add(mainPanel);
+        setContentPane(mainPanel);
         pack();
         setVisible(true);
     }
