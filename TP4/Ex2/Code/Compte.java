@@ -11,11 +11,20 @@ public abstract class Compte {
         this(0.0, denomination);
     }
 
-    public void ajouterMontant(float montant) {
+    public void ajouterMontant(double montant) {
         solde += montant;
     }
 
-    public void retirerMontant(float montant) {
+    public void retirerMontant(double montant) {
         solde -= montant;
+    }
+
+    public double getSolde() {
+        return solde;
+    }
+
+    @Override
+    public String toString() {
+        return denomination;
     }
 }

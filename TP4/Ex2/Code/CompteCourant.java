@@ -1,5 +1,5 @@
 public class CompteCourant extends Compte {
-    public CompteCourant(float solde, String denomination) {
+    public CompteCourant(double solde, String denomination) {
         super(solde, denomination);
     }
 
@@ -8,7 +8,7 @@ public class CompteCourant extends Compte {
     }
 
     @Override
-    public void retirerMontant(float montant) {
+    public void retirerMontant(double montant) {
         solde -= montant * 1.05;
     }
 }

@@ -1,14 +1,14 @@
 public class CompteEpargne extends Compte {
 
-    private float interets;
+    private double interets;
 
-    public CompteEpargne(float solde, String denomination) {
+    public CompteEpargne(double solde, String denomination, double interets) {
         super(solde, denomination);
+        this.interets = interets;
     }
 
-    public CompteEpargne(String denomination) {
-        super(denomination);
-
+    public CompteEpargne(String denomination, double interets) {
+        this(0.0, denomination, interets);
     }
 
     public void calculerInterets() {
