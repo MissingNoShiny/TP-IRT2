@@ -4,8 +4,8 @@ import java.awt.*;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class GenerateurForm extends JFrame {
-    public GenerateurForm() {
+public class GenerateurFrm extends JFrame {
+    public GenerateurFrm() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
