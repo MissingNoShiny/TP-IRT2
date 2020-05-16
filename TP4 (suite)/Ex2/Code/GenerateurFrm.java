@@ -28,10 +28,12 @@ public class GenerateurFrm extends JFrame {
         for (int i = 0; i < 3; i++) {
             JPanel colorPanel = new JPanel();
             colorPanel.setLayout(new BoxLayout(colorPanel, BoxLayout.Y_AXIS));
+            JPanel colorNamePanel = new JPanel();
             JLabel colorLabel = new JLabel(colorNames[i]);
             colorLabel.setOpaque(true);
             colorLabel.setBackground(color[i]);
-            colorPanel.add(colorLabel);
+            colorNamePanel.add(colorLabel);
+            colorPanel.add(colorNamePanel);
             JSlider colorSlider = new JSlider(JSlider.VERTICAL, 0, 255, 0);
             colorPanel.add(colorSlider);
             colorSliders[i] = colorSlider;
